@@ -1,22 +1,32 @@
 {
-	"name": "node-logger",
-	"description": "utility for logging to the console (or elsewhere) using ANSI (or not)",
-	"version": "1.0.0",
-	"author": {
-		"name": "Matt Johnson",
-		"email": "mdj1979@gmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/mcmlxxix/node-logger.git"
-	},
-	"bugs": {
-		"url": "https://github.com/mcmlxxix/node-logger/issues"
-	},
-	"licenses": [{
-		"type": "GNU",
-		"url": "https://github.com/mcmlxxix/node-logger/LICENSE"
-	}],
-	"main": "./log",
-	"keywords": ["utility", "ansi", "log", "console"]
+  "name": "node-logger",
+  "description": "utility for logging to the console (or elsewhere) using ANSI (or not)",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Johnson",
+    "email": "mdj1979@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mcmlxxix/node-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mcmlxxix/node-logger/issues"
+  },
+  "licenses": [
+    {
+      "type": "GNU",
+      "url": "https://github.com/mcmlxxix/node-logger/LICENSE"
+    }
+  ],
+  "main": "./log",
+  "keywords": [
+    "utility",
+    "ansi",
+    "log",
+    "console"
+  ],
+  "dependencies": {
+    "node-ansi": "git://github.com/mcmlxxix/node-ansi.git"
+  }
 }
