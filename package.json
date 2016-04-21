@@ -17,6 +17,6 @@
 		"type": "GNU",
 		"url": "https://github.com/mcmlxxix/node-logger/LICENSE"
 	}],
-	"main": "./ansi",
+	"main": "./log",
 	"keywords": ["utility", "ansi", "log", "console"]
 }

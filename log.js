@@ -8,7 +8,7 @@ var output = console.log;
 var useColor = true;
 
 /* do it */
-var log = function(str,lvl) {
+global.log = function(str,lvl) {
 	var color = "";
 	if(useColor) {
 		switch(lvl) {
@@ -31,24 +31,24 @@ var log = function(str,lvl) {
 };
 
 /* static class shit */
-log.__defineSetter__("output",function(opt) {
+module.exports.__defineSetter__("output",function(opt) {
 	if(typeof opt == "function") 
 		output = opt;
 	else
 		throw "invalid output stream";
 });
-log.__defineGetter__("output",function() {
+module.exports.__defineGetter__("output",function() {
 	return output;
 });
-log.__defineSetter__("useColor",function(bool) {
+module.exports.__defineSetter__("useColor",function(bool) {
 	if(typeof bool == "boolean") 
 		useColor = bool;
 	else
 		throw "invalid color toggle";
 });
-log.__defineGetter__("useColor",function() {
+module.exports.__defineGetter__("useColor",function() {
 	return useColor;
 });
 
 /* export! */
-module.exports = log;
+module.exports = global.log;
