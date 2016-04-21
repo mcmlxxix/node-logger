@@ -1,7 +1,7 @@
 {
 	"name": "node-logger",
 	"description": "utility for logging to the console (or elsewhere) using ANSI (or not)",
-	"version": "1.0",
+	"version": "1.0.0",
 	"author": {
 		"name": "Matt Johnson",
 		"email": "mdj1979@gmail.com"
